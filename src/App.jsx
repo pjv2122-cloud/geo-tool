@@ -1,5 +1,6 @@
 import { useState, useMemo } from "react";
 import { RadarChart, PolarGrid, PolarAngleAxis, Radar, ResponsiveContainer, Tooltip } from "recharts";
+import { Analytics } from "@vercel/analytics/react";
 
 // ─── COMPLETE COUNTRY DATABASE (75+ countries) ────────────────────────────
 const COUNTRIES = [
@@ -499,6 +500,7 @@ export default function GeoTool() {
             </div>
           </div>
         )}
+      <Analytics />
       </div>
     </div>
   );
